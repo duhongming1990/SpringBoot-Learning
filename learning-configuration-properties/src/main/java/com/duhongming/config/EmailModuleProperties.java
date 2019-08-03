@@ -36,18 +36,42 @@ import java.util.List;
 //ignoreUnknownFields未知的属性不忽略掉
 @ConfigurationProperties(prefix = "myapp.email",ignoreInvalidFields = true,ignoreUnknownFields = false)
 public class EmailModuleProperties {
+    /**
+     * 是否启用发邮件
+     */
     private boolean enabled = Boolean.FALSE;
 
+    /**
+     * 默认主题
+     */
     private String defaultSubject;
 
     //Spring 宽松绑定规则（relaxed binding）
+    /**
+     * 主机名1
+     */
     private String hostName1;
+    /**
+     * 主机名2
+     */
     private String hostName2;
+    /**
+     * 主机名3
+     */
     private String hostName3;
+    /**
+     * 主机名4
+     */
     private String hostName4;
+    /**
+     * 主机名5
+     */
     private String hostName5;
 
     //复杂属性类型
+    /**
+     * smtp服务器列表
+     */
     private List<String> smtpServers;
 
     /**
@@ -74,7 +98,12 @@ public class EmailModuleProperties {
     @DataSizeUnit(DataUnit.MEGABYTES)
     private DataSize maxAttachmentSize = DataSize.ofMegabytes(2);
 
-    private WeightSize maxAttachmentWeight;
+    /**
+     * g 克(默认)
+     * kg 千克
+     * t 吨
+     */
+    private WeightSize maxAttachmentWeight = WeightSize.ofKG(2);
 
     /**
      * 标记配置属性为Deprecated
