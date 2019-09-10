@@ -6,15 +6,15 @@ import org.springframework.scheduling.annotation.EnableAsync;
 /**
  * @author duhongming
  * @version 1.0
- * @description TODO
+ * @description Spring Boot使用@Async实现异步调用：自定义线程池
  * @date 2019/9/6 9:31
  */
 @SpringBootApplication
 @EnableAsync
-public class Application {
+public class AsyncApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(AsyncApplication.class, args);
 	}
 
 }
