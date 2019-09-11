@@ -13,7 +13,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * @author duhongming
  * @version 1.0
- * @description TODO
+ * @description Spring Boot使用@Async实现异步调用：自定义线程池
  * @date 2019/9/6 9:33
  */
 @SpringBootApplication

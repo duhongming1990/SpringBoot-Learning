@@ -17,7 +17,7 @@ import java.util.concurrent.Future;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class ApplicationTests {
+public class AsyncApplicationTests {
 
 	@Autowired
 	private Task task;
