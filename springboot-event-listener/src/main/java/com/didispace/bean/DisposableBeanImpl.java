@@ -1,4 +1,4 @@
-package com.didispace.bean;
+package com.didispace.constructor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.DisposableBean;
